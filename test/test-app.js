@@ -9,6 +9,7 @@ const deps = [
     [helpers.createDummyGenerator(), 'jhipster:modules']
 ];
 
+/*
 describe('JHipster generator banner', () => {
     describe('simple test', () => {
         beforeEach((done) => {
@@ -34,3 +35,4 @@ describe('JHipster generator banner', () => {
         });
     });
 });
+*/
