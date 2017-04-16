@@ -1260,7 +1260,13 @@ module.exports = generator.extend({
     value: 'YELLOW',
     name: 'YELLOW'
 }
-        ]}];
+        ]},
+        {
+        type: 'confirm',
+        name: 'appendJHipsterMessage',
+        message: "Would you like to append 'Generated with ♥ by JHipster' to your banner ?",
+        default: true
+        }];
 
         this.prompt(prompts).then((props) => {
             this.props = props;
@@ -1280,6 +1286,7 @@ module.exports = generator.extend({
         this.bannerMessage = this.props.bannerMessage;
         this.bannerFont = this.props.bannerFont;
         this.bannerColor = this.props.bannerColor;
+        this.appendJHipsterMessage = this.props.appendJHipsterMessage;
 
         this.log(this.bannerMessage)
         this.log(this.bannerColor)
