@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-banner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "JHipster module to generate a custom Spring Boot banner.txt",
   "keywords": [
     "yeoman-generator",
