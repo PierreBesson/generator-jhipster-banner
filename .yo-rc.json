@@ -1,0 +1,10 @@
+{
+  "generator-jhipster-module": {
+    "promptValues": {
+      "githubName": "PierreBesson",
+      "authorName": "Pierre Besson",
+      "authorEmail": "pierre.d.besson@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
