@@ -1,6 +1,7 @@
 # generator-jhipster-banner
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > JHipster module, JHipster module to generate a custom Spring Boot banner.txt
+Based on [figlet](https://www.npmjs.com/package/figlet).
 
 # Introduction
 
@@ -43,6 +44,9 @@ npm update -g generator-jhipster-banner
 ```
 
 # Usage
+
+Run `yo jhipster-banner`.
+Enjoy.
 
 # License
 
