@@ -3,6 +3,8 @@
 > JHipster module, JHipster module to generate a custom Spring Boot banner.txt
 Based on [figlet](https://www.npmjs.com/package/figlet).
 
+![image](image.png)
+
 # Introduction
 
 This is a [JHipster](http://jhipster.github.io/) module, that is meant to be used in a JHipster application.
