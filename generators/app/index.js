@@ -1,24 +1,24 @@
 const chalk = require('chalk');
+const util = require('util');
 const generator = require('yeoman-generator');
 const packagejs = require('../../package.json');
+const semver = require('semver');
+const BaseGenerator = require('generator-jhipster/generators/generator-base');
+const jhipsterConstants = require('generator-jhipster/generators/generator-constants');
+
+const JhipsterGenerator = generator.extend({});
+util.inherits(JhipsterGenerator, BaseGenerator);
+
 const figlet = require('figlet');
 
 // Stores JHipster variables
 const jhipsterVar = { moduleName: 'banner' };
 
-// Stores JHipster functions
-const jhipsterFunc = {},
-      SERVER_MAIN_RES_DIR = 'src/main/resources/';
+const SERVER_MAIN_RES_DIR = 'src/main/resources/';
 
-module.exports = generator.extend({
+module.exports = JhipsterGenerator.extend({
 
     initializing: {
-        compose() {
-            this.composeWith('jhipster:modules',
-                { jhipsterVar, jhipsterFunc },
-                this.options.testmode ? { local: require.resolve('generator-jhipster/generators/modules') } : null
-            );
-        },
         displayLogo() {
             // Have Yeoman greet the user.
             this.log(`Welcome to the ${chalk.bold.yellow('JHipster banner')} generator! ${chalk.yellow(`v${packagejs.version}\n`)}`);
