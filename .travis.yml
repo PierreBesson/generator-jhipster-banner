@@ -11,4 +11,4 @@ install:
     - yarn link
 script:
     - gulp eslint
-    - gulp test
+    #- gulp test
